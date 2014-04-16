@@ -1,0 +1,26 @@
+{
+	"alias": "cobug_ofs0",
+	"autoboot": false,
+	"brand": "kvm",
+	"hostname": "cobug_ofs0",
+	"ram": 512,
+	"resolvers": ["8.8.8.8", "8.8.4.4"],
+	"vcpus": 1,
+	"disks": [
+		{
+			"boot": true,
+			"model": "virtio",
+			"size": 20960
+		}
+	],
+	"nics": [
+		{
+			"nic_tag": "admin",
+			"model": "virtio",
+			"ip": "10.0.1.115",
+			"netmask": "255.255.255.0",
+			"gateway": "10.0.1.1",
+			"primary": 1	
+		}
+	]
+}
